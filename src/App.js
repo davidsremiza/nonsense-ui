@@ -7,7 +7,7 @@ function App() {
     const [currentItem, setCurrentItem] = useState(null);
 
     useEffect(() => {
-        fetch('/assets/nonsense_results.csv')
+        fetch('/assets/nonsense_results.txt')
             .then(response => response.text())
             .then(csvData => {
                 console.log('Raw CSV Data:', csvData);  // Log the raw CSV data
